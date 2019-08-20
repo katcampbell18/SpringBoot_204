@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="#" th:action="@{/tvform}" th:object="${tvshow}" method="post">
+    <form action="#" th:action="@{/carform}" th:object="${car}" method="post">
         Id: <input type="number" th:field="*{id}" />
         <span th:if="${#fields.hasErrors('id')}" th:errors="*{id}"></span><br />
         Name: <input type="text" th:field="*{name}" />
